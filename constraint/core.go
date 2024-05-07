@@ -232,18 +232,21 @@ func (system *System) AddInternalVariable() (idx int) {
 	if debug.Debug && len(system.lbWireLevel) != system.NbInternalVariables {
 		panic("internal error")
 	}
+	fmt.Printf("VERIDISE:INTERNAL_VARIABLE:%d\n", idx)
 	return idx
 }
 
 func (system *System) AddPublicVariable(name string) (idx int) {
 	idx = system.GetNbPublicVariables()
 	system.Public = append(system.Public, name)
+	fmt.Printf("VERIDISE:PUBLIC_VARIABLE:%s:%d\n", name, idx)
 	return idx
 }
 
 func (system *System) AddSecretVariable(name string) (idx int) {
 	idx = system.GetNbSecretVariables() + system.GetNbPublicVariables()
 	system.Secret = append(system.Secret, name)
+	fmt.Printf("VERIDISE:SECRET_VARIABLE:%s:%d\n", name, idx)
 	return idx
 }
 
