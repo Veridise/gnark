@@ -6,6 +6,8 @@ github.com/consensys/bavard v0.1.13 h1:oLhMLOFGTLdlda/kma4VOJazblc7IM5y5QPd2A/Yj
 github.com/consensys/bavard v0.1.13/go.mod h1:9ItSMtA/dXMAiL7BG6bqW2m3NdSEObYWoH223nGHukI=
 github.com/consensys/compress v0.2.5 h1:gJr1hKzbOD36JFsF1AN8lfXz1yevnJi1YolffY19Ntk=
 github.com/consensys/compress v0.2.5/go.mod h1:pyM+ZXiNUh7/0+AUjUf9RKUM6vSH7T/fsn5LLS0j1Tk=
+github.com/consensys/gnark v0.10.0 h1:yhi6ThoeFP7WrH8zQDaO56WVXe9iJEBSkfrZ9PZxabw=
+github.com/consensys/gnark v0.10.0/go.mod h1:VJU5JrrhZorbfDH+EUjcuFWr2c5z19tHPh8D6KVQksU=
 github.com/consensys/gnark-crypto v0.12.2-0.20240504013751-564b6f724c3b h1:tu0NaVr64o6vXzy9rYSK/LCZXmS+u/k9eP1F8OtRUWQ=
 github.com/consensys/gnark-crypto v0.12.2-0.20240504013751-564b6f724c3b/go.mod h1:wKqwsieaKPThcFkHe0d0zMsbHEUWFmZcG7KBCse210o=
 github.com/coreos/go-systemd/v22 v22.5.0/go.mod h1:Y58oyj3AT4RCenI/lSvhwexgC+NSVTIJ3seZv2GcEnc=
