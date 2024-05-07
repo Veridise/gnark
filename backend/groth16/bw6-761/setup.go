@@ -23,9 +23,9 @@ import (
 	"github.com/consensys/gnark-crypto/ecc/bw6-761/fr"
 	"github.com/consensys/gnark-crypto/ecc/bw6-761/fr/fft"
 	"github.com/consensys/gnark-crypto/ecc/bw6-761/fr/pedersen"
-	"github.com/consensys/gnark/backend/groth16/internal"
-	"github.com/consensys/gnark/constraint"
-	cs "github.com/consensys/gnark/constraint/bw6-761"
+	"github.com/Veridise/gnark/backend/groth16/internal"
+	"github.com/Veridise/gnark/constraint"
+	cs "github.com/Veridise/gnark/constraint/bw6-761"
 	"math/big"
 	"math/bits"
 )

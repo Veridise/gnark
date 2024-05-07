@@ -20,10 +20,10 @@ import (
 	"testing"
 
 	curve "github.com/consensys/gnark-crypto/ecc/bls12-381"
-	cs "github.com/consensys/gnark/constraint/bls12-381"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/frontend/cs/r1cs"
-	gnarkio "github.com/consensys/gnark/io"
+	cs "github.com/Veridise/gnark/constraint/bls12-381"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/frontend/cs/r1cs"
+	gnarkio "github.com/Veridise/gnark/io"
 	"github.com/stretchr/testify/require"
 )
 

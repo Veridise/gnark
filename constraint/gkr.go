@@ -2,10 +2,11 @@ package constraint
 
 import (
 	"fmt"
-	"github.com/consensys/gnark-crypto/utils"
-	"github.com/consensys/gnark/constraint/solver"
-	"github.com/consensys/gnark/std/utils/algo_utils"
 	"sort"
+
+	"github.com/Veridise/gnark/constraint/solver"
+	"github.com/Veridise/gnark/std/utils/algo_utils"
+	"github.com/consensys/gnark-crypto/utils"
 )
 
 type GkrVariable int // Just an alias to hide implementation details. May be more trouble than worth

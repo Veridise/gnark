@@ -3,9 +3,9 @@ package frontend
 import (
 	"math/big"
 
-	"github.com/consensys/gnark/constraint"
-	"github.com/consensys/gnark/constraint/solver"
-	"github.com/consensys/gnark/frontend/schema"
+	"github.com/Veridise/gnark/constraint"
+	"github.com/Veridise/gnark/constraint/solver"
+	"github.com/Veridise/gnark/frontend/schema"
 )
 
 type NewBuilder func(*big.Int, CompileConfig) (Builder, error)

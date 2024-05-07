@@ -5,21 +5,21 @@ import (
 	"os"
 	"testing"
 
+	"github.com/Veridise/gnark/backend/groth16"
+	"github.com/Veridise/gnark/backend/plonk"
+	"github.com/Veridise/gnark/backend/witness"
+	"github.com/Veridise/gnark/constraint/solver"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/frontend/cs/r1cs"
+	"github.com/Veridise/gnark/frontend/cs/scs"
+	"github.com/Veridise/gnark/test"
 	"github.com/consensys/gnark-crypto/ecc"
 	fr_bn254 "github.com/consensys/gnark-crypto/ecc/bn254/fr"
-	"github.com/consensys/gnark/backend/groth16"
-	"github.com/consensys/gnark/backend/plonk"
-	"github.com/consensys/gnark/backend/witness"
-	"github.com/consensys/gnark/constraint/solver"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/frontend/cs/r1cs"
-	"github.com/consensys/gnark/frontend/cs/scs"
-	"github.com/consensys/gnark/test"
 )
 
 const (
-	explicitHintName  = "github.com/consensys/gnark/internal/regression_tests/issue1045.ExplicitHint"
-	anonymousHintName = "github.com/consensys/gnark/internal/regression_tests/issue1045.glob..func1"
+	explicitHintName  = "github.com/Veridise/gnark/internal/regression_tests/issue1045.ExplicitHint"
+	anonymousHintName = "github.com/Veridise/gnark/internal/regression_tests/issue1045.glob..func1"
 )
 
 func ExplicitHint(mod *big.Int, inputs []*big.Int, outputs []*big.Int) error {

@@ -3,10 +3,10 @@ package sumcheck
 import (
 	"fmt"
 
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/std/math/emulated"
-	"github.com/consensys/gnark/std/math/polynomial"
-	"github.com/consensys/gnark/std/recursion"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/std/math/emulated"
+	"github.com/Veridise/gnark/std/math/polynomial"
+	"github.com/Veridise/gnark/std/recursion"
 )
 
 type config struct {

@@ -21,15 +21,15 @@ import (
 	"math/big"
 	"testing"
 
+	"github.com/Veridise/gnark/constraint"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/frontend/cs/scs"
+	"github.com/Veridise/gnark/internal/utils"
+	"github.com/Veridise/gnark/std/hash/mimc"
+	"github.com/Veridise/gnark/test"
 	"github.com/consensys/gnark-crypto/ecc"
 	fiatshamir "github.com/consensys/gnark-crypto/fiat-shamir"
 	"github.com/consensys/gnark-crypto/hash"
-	"github.com/consensys/gnark/constraint"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/frontend/cs/scs"
-	"github.com/consensys/gnark/internal/utils"
-	"github.com/consensys/gnark/std/hash/mimc"
-	"github.com/consensys/gnark/test"
 )
 
 type FiatShamirCircuit struct {

@@ -20,10 +20,10 @@ import (
 	"math/big"
 	"testing"
 
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/test"
 	"github.com/consensys/gnark-crypto/ecc"
 	bls12377 "github.com/consensys/gnark-crypto/ecc/bls12-377"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/test"
 )
 
 //--------------------------------------------------------------------

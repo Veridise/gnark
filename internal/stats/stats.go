@@ -6,12 +6,12 @@ import (
 	"os"
 	"sync"
 
+	"github.com/Veridise/gnark/backend"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/frontend/cs/r1cs"
+	"github.com/Veridise/gnark/frontend/cs/scs"
 	"github.com/consensys/gnark"
 	"github.com/consensys/gnark-crypto/ecc"
-	"github.com/consensys/gnark/backend"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/frontend/cs/r1cs"
-	"github.com/consensys/gnark/frontend/cs/scs"
 )
 
 const nbCurves = 7

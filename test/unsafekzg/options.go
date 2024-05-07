@@ -4,7 +4,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/consensys/gnark/logger"
+	"github.com/Veridise/gnark/logger"
 )
 
 type Option func(*config) error

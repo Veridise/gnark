@@ -4,17 +4,17 @@ import (
 	"fmt"
 	"math/big"
 
+	native_plonk "github.com/Veridise/gnark/backend/plonk"
+	"github.com/Veridise/gnark/backend/witness"
+	"github.com/Veridise/gnark/constraint"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/frontend/cs/scs"
+	"github.com/Veridise/gnark/std/algebra"
+	"github.com/Veridise/gnark/std/algebra/emulated/sw_bw6761"
+	"github.com/Veridise/gnark/std/math/emulated"
+	"github.com/Veridise/gnark/std/recursion/plonk"
+	"github.com/Veridise/gnark/test/unsafekzg"
 	"github.com/consensys/gnark-crypto/ecc"
-	native_plonk "github.com/consensys/gnark/backend/plonk"
-	"github.com/consensys/gnark/backend/witness"
-	"github.com/consensys/gnark/constraint"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/frontend/cs/scs"
-	"github.com/consensys/gnark/std/algebra"
-	"github.com/consensys/gnark/std/algebra/emulated/sw_bw6761"
-	"github.com/consensys/gnark/std/math/emulated"
-	"github.com/consensys/gnark/std/recursion/plonk"
-	"github.com/consensys/gnark/test/unsafekzg"
 )
 
 // InnerCircuitNative is the definition of the inner circuit we want to

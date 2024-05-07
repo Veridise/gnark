@@ -3,15 +3,15 @@ package test
 import (
 	"crypto/sha256"
 
+	"github.com/Veridise/gnark/backend"
+	"github.com/Veridise/gnark/backend/groth16"
+	"github.com/Veridise/gnark/backend/plonk"
+	"github.com/Veridise/gnark/backend/witness"
+	"github.com/Veridise/gnark/constraint"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/frontend/schema"
+	"github.com/Veridise/gnark/test/unsafekzg"
 	"github.com/consensys/gnark-crypto/ecc"
-	"github.com/consensys/gnark/backend"
-	"github.com/consensys/gnark/backend/groth16"
-	"github.com/consensys/gnark/backend/plonk"
-	"github.com/consensys/gnark/backend/witness"
-	"github.com/consensys/gnark/constraint"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/frontend/schema"
-	"github.com/consensys/gnark/test/unsafekzg"
 )
 
 // CheckCircuit performs a series of check on the provided circuit.

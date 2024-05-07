@@ -1,10 +1,10 @@
 package evmprecompiles
 
 import (
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/std/algebra/algopts"
-	"github.com/consensys/gnark/std/algebra/emulated/sw_emulated"
-	"github.com/consensys/gnark/std/math/emulated"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/std/algebra/algopts"
+	"github.com/Veridise/gnark/std/algebra/emulated/sw_emulated"
+	"github.com/Veridise/gnark/std/math/emulated"
 )
 
 // ECMul implements [ALT_BN128_MUL] precompile contract at address 0x07.

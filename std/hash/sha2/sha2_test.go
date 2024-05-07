@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/std/math/uints"
+	"github.com/Veridise/gnark/test"
 	"github.com/consensys/gnark-crypto/ecc"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/std/math/uints"
-	"github.com/consensys/gnark/test"
 )
 
 type sha2Circuit struct {

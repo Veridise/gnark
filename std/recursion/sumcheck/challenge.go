@@ -5,10 +5,10 @@ import (
 	"math/big"
 	"slices"
 
+	fiatshamir "github.com/Veridise/gnark/std/fiat-shamir"
+	"github.com/Veridise/gnark/std/math/bits"
+	"github.com/Veridise/gnark/std/math/emulated"
 	cryptofiatshamir "github.com/consensys/gnark-crypto/fiat-shamir"
-	fiatshamir "github.com/consensys/gnark/std/fiat-shamir"
-	"github.com/consensys/gnark/std/math/bits"
-	"github.com/consensys/gnark/std/math/emulated"
 )
 
 // getChallengeNames returns all the challenge names used in the sumcheck

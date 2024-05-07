@@ -24,17 +24,17 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/consensys/gnark/internal/utils"
+	"github.com/Veridise/gnark/internal/utils"
 
-	"github.com/consensys/gnark/debug"
-	"github.com/consensys/gnark/frontend/cs"
+	"github.com/Veridise/gnark/debug"
+	"github.com/Veridise/gnark/frontend/cs"
 
-	"github.com/consensys/gnark/constraint"
-	"github.com/consensys/gnark/constraint/solver"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/frontend/internal/expr"
-	"github.com/consensys/gnark/frontend/schema"
-	"github.com/consensys/gnark/std/math/bits"
+	"github.com/Veridise/gnark/constraint"
+	"github.com/Veridise/gnark/constraint/solver"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/frontend/internal/expr"
+	"github.com/Veridise/gnark/frontend/schema"
+	"github.com/Veridise/gnark/std/math/bits"
 )
 
 // ---------------------------------------------------------------------------------------------

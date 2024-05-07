@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/std/math/bits"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/std/math/bits"
 )
 
 type hintCircuit struct {

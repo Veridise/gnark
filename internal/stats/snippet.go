@@ -4,17 +4,17 @@ import (
 	"math"
 	"sync"
 
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/std/algebra/emulated/sw_bls12381"
+	"github.com/Veridise/gnark/std/algebra/emulated/sw_bn254"
+	"github.com/Veridise/gnark/std/algebra/emulated/sw_bw6761"
+	"github.com/Veridise/gnark/std/algebra/native/sw_bls12377"
+	"github.com/Veridise/gnark/std/algebra/native/sw_bls24315"
+	"github.com/Veridise/gnark/std/hash/mimc"
+	"github.com/Veridise/gnark/std/math/bits"
+	"github.com/Veridise/gnark/std/math/emulated"
 	"github.com/consensys/gnark"
 	"github.com/consensys/gnark-crypto/ecc"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/std/algebra/emulated/sw_bls12381"
-	"github.com/consensys/gnark/std/algebra/emulated/sw_bn254"
-	"github.com/consensys/gnark/std/algebra/emulated/sw_bw6761"
-	"github.com/consensys/gnark/std/algebra/native/sw_bls12377"
-	"github.com/consensys/gnark/std/algebra/native/sw_bls24315"
-	"github.com/consensys/gnark/std/hash/mimc"
-	"github.com/consensys/gnark/std/math/bits"
-	"github.com/consensys/gnark/std/math/emulated"
 )
 
 var (

@@ -3,11 +3,11 @@ package eddsa
 import (
 	"errors"
 
-	"github.com/consensys/gnark/logger"
-	"github.com/consensys/gnark/std/hash"
+	"github.com/Veridise/gnark/logger"
+	"github.com/Veridise/gnark/std/hash"
 
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/std/algebra/native/twistededwards"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/std/algebra/native/twistededwards"
 
 	tedwards "github.com/consensys/gnark-crypto/ecc/twistededwards"
 

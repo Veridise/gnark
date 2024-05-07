@@ -26,22 +26,22 @@ import (
 	"strings"
 	"sync/atomic"
 
+	"github.com/Veridise/gnark/constraint"
 	"github.com/bits-and-blooms/bitset"
-	"github.com/consensys/gnark/constraint"
 
-	"github.com/consensys/gnark/constraint/solver"
-	"github.com/consensys/gnark/debug"
-	"github.com/consensys/gnark/frontend/schema"
-	"github.com/consensys/gnark/logger"
+	"github.com/Veridise/gnark/constraint/solver"
+	"github.com/Veridise/gnark/debug"
+	"github.com/Veridise/gnark/frontend/schema"
+	"github.com/Veridise/gnark/logger"
 	"golang.org/x/crypto/sha3"
 
+	"github.com/Veridise/gnark/backend"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/internal/circuitdefer"
+	"github.com/Veridise/gnark/internal/kvstore"
+	"github.com/Veridise/gnark/internal/utils"
 	"github.com/consensys/gnark-crypto/ecc"
 	"github.com/consensys/gnark-crypto/field/pool"
-	"github.com/consensys/gnark/backend"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/internal/circuitdefer"
-	"github.com/consensys/gnark/internal/kvstore"
-	"github.com/consensys/gnark/internal/utils"
 )
 
 // engine implements frontend.API

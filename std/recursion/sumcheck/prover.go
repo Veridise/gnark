@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"math/big"
 
+	"github.com/Veridise/gnark/std/recursion"
 	fiatshamir "github.com/consensys/gnark-crypto/fiat-shamir"
-	"github.com/consensys/gnark/std/recursion"
 )
 
 type proverConfig struct {

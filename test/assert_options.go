@@ -3,10 +3,10 @@ package test
 import (
 	"testing"
 
+	"github.com/Veridise/gnark/backend"
+	"github.com/Veridise/gnark/constraint/solver"
+	"github.com/Veridise/gnark/frontend"
 	"github.com/consensys/gnark-crypto/ecc"
-	"github.com/consensys/gnark/backend"
-	"github.com/consensys/gnark/constraint/solver"
-	"github.com/consensys/gnark/frontend"
 )
 
 // TestingOption defines option for altering the behavior of Assert methods.

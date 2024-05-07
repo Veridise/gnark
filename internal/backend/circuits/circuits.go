@@ -2,9 +2,9 @@
 package circuits
 
 import (
+	"github.com/Veridise/gnark/constraint/solver"
+	"github.com/Veridise/gnark/frontend"
 	"github.com/consensys/gnark-crypto/ecc"
-	"github.com/consensys/gnark/constraint/solver"
-	"github.com/consensys/gnark/frontend"
 )
 
 // TestCircuit are used for test purposes (backend.Groth16 and gnark/integration_test.go)

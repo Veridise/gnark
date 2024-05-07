@@ -17,10 +17,10 @@ limitations under the License.
 package fields_bls24315
 
 import (
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/internal/utils"
 	bls24315 "github.com/consensys/gnark-crypto/ecc/bls24-315"
 	"github.com/consensys/gnark-crypto/ecc/bw6-633/fr"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/internal/utils"
 )
 
 // E2 element in a quadratic extension

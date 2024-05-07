@@ -3,11 +3,11 @@ package constraint_test
 import (
 	"fmt"
 
+	"github.com/Veridise/gnark/constraint"
+	cs "github.com/Veridise/gnark/constraint/bn254"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/frontend/cs/r1cs"
 	"github.com/consensys/gnark-crypto/ecc"
-	"github.com/consensys/gnark/constraint"
-	cs "github.com/consensys/gnark/constraint/bn254"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/frontend/cs/r1cs"
 )
 
 func ExampleR1CS_GetR1Cs() {

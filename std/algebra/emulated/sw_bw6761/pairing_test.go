@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/Veridise/gnark/constraint"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/frontend/cs/r1cs"
+	"github.com/Veridise/gnark/frontend/cs/scs"
+	"github.com/Veridise/gnark/test"
 	"github.com/consensys/gnark-crypto/ecc"
 	bw6761 "github.com/consensys/gnark-crypto/ecc/bw6-761"
-	"github.com/consensys/gnark/constraint"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/frontend/cs/r1cs"
-	"github.com/consensys/gnark/frontend/cs/scs"
-	"github.com/consensys/gnark/test"
 )
 
 func randomG1G2Affines() (bw6761.G1Affine, bw6761.G2Affine) {

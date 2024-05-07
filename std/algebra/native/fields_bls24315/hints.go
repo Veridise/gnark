@@ -3,8 +3,8 @@ package fields_bls24315
 import (
 	"math/big"
 
+	"github.com/Veridise/gnark/constraint/solver"
 	bls24315 "github.com/consensys/gnark-crypto/ecc/bls24-315"
-	"github.com/consensys/gnark/constraint/solver"
 )
 
 func GetHints() []solver.Hint {

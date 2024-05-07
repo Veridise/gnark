@@ -1,9 +1,9 @@
 package ecdsa
 
 import (
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/std/algebra/emulated/sw_emulated"
-	"github.com/consensys/gnark/std/math/emulated"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/std/algebra/emulated/sw_emulated"
+	"github.com/Veridise/gnark/std/math/emulated"
 )
 
 // Signature represents the signature for some message.

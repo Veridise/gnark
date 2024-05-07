@@ -18,13 +18,13 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/Veridise/gnark/backend/plonk"
+	cs "github.com/Veridise/gnark/constraint/bn254"
+	"github.com/Veridise/gnark/frontend/cs/scs"
 	"github.com/consensys/gnark-crypto/ecc"
-	"github.com/consensys/gnark/backend/plonk"
-	cs "github.com/consensys/gnark/constraint/bn254"
-	"github.com/consensys/gnark/frontend/cs/scs"
 
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/test/unsafekzg"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/test/unsafekzg"
 )
 
 // In this example we show how to use PLONK with KZG commitments. The circuit that is

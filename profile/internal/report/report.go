@@ -26,8 +26,8 @@ import (
 	"text/tabwriter"
 	"time"
 
-	"github.com/consensys/gnark/profile/internal/graph"
-	"github.com/consensys/gnark/profile/internal/measurement"
+	"github.com/Veridise/gnark/profile/internal/graph"
+	"github.com/Veridise/gnark/profile/internal/measurement"
 	"github.com/google/pprof/profile"
 )
 

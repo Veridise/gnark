@@ -6,11 +6,11 @@ import (
 	"hash"
 	"testing"
 
+	"github.com/Veridise/gnark/frontend"
+	zkhash "github.com/Veridise/gnark/std/hash"
+	"github.com/Veridise/gnark/std/math/uints"
+	"github.com/Veridise/gnark/test"
 	"github.com/consensys/gnark-crypto/ecc"
-	"github.com/consensys/gnark/frontend"
-	zkhash "github.com/consensys/gnark/std/hash"
-	"github.com/consensys/gnark/std/math/uints"
-	"github.com/consensys/gnark/test"
 	"golang.org/x/crypto/sha3"
 )
 

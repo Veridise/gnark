@@ -21,7 +21,7 @@ import (
 
 	"github.com/consensys/gnark-crypto/ecc/bls24-315/fr/pedersen"
 	"github.com/consensys/gnark-crypto/utils/unsafe"
-	"github.com/consensys/gnark/internal/utils"
+	"github.com/Veridise/gnark/internal/utils"
 	"io"
 )
 

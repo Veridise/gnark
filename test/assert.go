@@ -23,15 +23,15 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/Veridise/gnark/backend"
+	"github.com/Veridise/gnark/backend/witness"
+	"github.com/Veridise/gnark/constraint"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/frontend/cs/r1cs"
+	"github.com/Veridise/gnark/frontend/cs/scs"
+	"github.com/Veridise/gnark/frontend/schema"
+	gnarkio "github.com/Veridise/gnark/io"
 	"github.com/consensys/gnark-crypto/ecc"
-	"github.com/consensys/gnark/backend"
-	"github.com/consensys/gnark/backend/witness"
-	"github.com/consensys/gnark/constraint"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/frontend/cs/r1cs"
-	"github.com/consensys/gnark/frontend/cs/scs"
-	"github.com/consensys/gnark/frontend/schema"
-	gnarkio "github.com/consensys/gnark/io"
 	"github.com/stretchr/testify/require"
 )
 

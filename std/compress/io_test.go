@@ -4,18 +4,19 @@ import (
 	"crypto/rand"
 	"errors"
 	"fmt"
+	"math/big"
+	"testing"
+
+	"github.com/Veridise/gnark/backend"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/frontend/cs/scs"
+	"github.com/Veridise/gnark/profile"
+	test_vector_utils "github.com/Veridise/gnark/std/utils/test_vectors_utils"
+	"github.com/Veridise/gnark/test"
 	"github.com/consensys/gnark-crypto/ecc"
 	"github.com/consensys/gnark-crypto/ecc/bls12-377/fr"
 	"github.com/consensys/gnark-crypto/hash"
-	"github.com/consensys/gnark/backend"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/frontend/cs/scs"
-	"github.com/consensys/gnark/profile"
-	test_vector_utils "github.com/consensys/gnark/std/utils/test_vectors_utils"
-	"github.com/consensys/gnark/test"
 	"github.com/stretchr/testify/assert"
-	"math/big"
-	"testing"
 )
 
 func TestShiftLeft(t *testing.T) {

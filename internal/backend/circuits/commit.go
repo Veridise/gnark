@@ -1,9 +1,9 @@
 package circuits
 
 import (
+	"github.com/Veridise/gnark/frontend"
 	"github.com/consensys/gnark-crypto/ecc"
 	"github.com/consensys/gnark-crypto/ecc/bn254"
-	"github.com/consensys/gnark/frontend"
 )
 
 type commitCircuit struct {

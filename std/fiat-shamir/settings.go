@@ -1,8 +1,8 @@
 package fiatshamir
 
 import (
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/std/hash"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/std/hash"
 )
 
 type Settings struct {

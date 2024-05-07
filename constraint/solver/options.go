@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/consensys/gnark/logger"
+	"github.com/Veridise/gnark/logger"
 	"github.com/rs/zerolog"
 )
 

@@ -23,8 +23,8 @@ import (
 
 	curve "github.com/consensys/gnark-crypto/ecc/bw6-761"
 	"github.com/consensys/gnark-crypto/ecc/bw6-761/fr"
-	"github.com/consensys/gnark/constraint"
-	cs "github.com/consensys/gnark/constraint/bw6-761"
+	"github.com/Veridise/gnark/constraint"
+	cs "github.com/Veridise/gnark/constraint/bw6-761"
 )
 
 type Phase2Evaluations struct {

@@ -3,6 +3,12 @@ package pedersen
 import (
 	"fmt"
 
+	"github.com/Veridise/gnark/std/algebra"
+	"github.com/Veridise/gnark/std/algebra/emulated/sw_bls12381"
+	"github.com/Veridise/gnark/std/algebra/emulated/sw_bn254"
+	"github.com/Veridise/gnark/std/algebra/emulated/sw_bw6761"
+	"github.com/Veridise/gnark/std/algebra/native/sw_bls12377"
+	"github.com/Veridise/gnark/std/algebra/native/sw_bls24315"
 	bls12377 "github.com/consensys/gnark-crypto/ecc/bls12-377"
 	ped_bls12377 "github.com/consensys/gnark-crypto/ecc/bls12-377/fr/pedersen"
 	bls12381 "github.com/consensys/gnark-crypto/ecc/bls12-381"
@@ -13,12 +19,6 @@ import (
 	ped_bn254 "github.com/consensys/gnark-crypto/ecc/bn254/fr/pedersen"
 	bw6761 "github.com/consensys/gnark-crypto/ecc/bw6-761"
 	ped_bw6761 "github.com/consensys/gnark-crypto/ecc/bw6-761/fr/pedersen"
-	"github.com/consensys/gnark/std/algebra"
-	"github.com/consensys/gnark/std/algebra/emulated/sw_bls12381"
-	"github.com/consensys/gnark/std/algebra/emulated/sw_bn254"
-	"github.com/consensys/gnark/std/algebra/emulated/sw_bw6761"
-	"github.com/consensys/gnark/std/algebra/native/sw_bls12377"
-	"github.com/consensys/gnark/std/algebra/native/sw_bls24315"
 )
 
 // ValueOfVerifyingKey returns a VerifyingKey from a native Pedersen verifying

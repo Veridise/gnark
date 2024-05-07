@@ -8,9 +8,9 @@ import (
 	"github.com/consensys/gnark"
 	"github.com/consensys/gnark-crypto/ecc"
 
-	"github.com/consensys/gnark/constraint/solver"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/std/math/bits"
+	"github.com/Veridise/gnark/constraint/solver"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/std/math/bits"
 )
 
 type hintCircuit struct {

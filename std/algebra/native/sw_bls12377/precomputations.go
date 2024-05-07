@@ -17,9 +17,9 @@ limitations under the License.
 package sw_bls12377
 
 import (
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/std/algebra/native/fields_bls12377"
 	bls12377 "github.com/consensys/gnark-crypto/ecc/bls12-377"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/std/algebra/native/fields_bls12377"
 )
 
 // lineEvaluation represents a sparse Fp12 Elmt (result of the line evaluation)

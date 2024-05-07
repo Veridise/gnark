@@ -4,16 +4,17 @@ import (
 	"crypto/sha256"
 	"encoding/hex"
 	"fmt"
-	"github.com/consensys/gnark/frontend/cs/scs"
 	"os"
 	"testing"
 
+	"github.com/Veridise/gnark/frontend/cs/scs"
+
+	"github.com/Veridise/gnark/backend"
+	"github.com/Veridise/gnark/frontend"
+	test_vector_utils "github.com/Veridise/gnark/std/utils/test_vectors_utils"
+	"github.com/Veridise/gnark/test"
 	"github.com/consensys/compress/lzss"
 	"github.com/consensys/gnark-crypto/ecc"
-	"github.com/consensys/gnark/backend"
-	"github.com/consensys/gnark/frontend"
-	test_vector_utils "github.com/consensys/gnark/std/utils/test_vectors_utils"
-	"github.com/consensys/gnark/test"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -20,14 +20,14 @@ import (
 	"io"
 	"time"
 
-	"github.com/consensys/gnark/backend/witness"
-	"github.com/consensys/gnark/constraint"
-	csolver "github.com/consensys/gnark/constraint/solver"
-	"github.com/consensys/gnark/logger"
+	"github.com/Veridise/gnark/backend/witness"
+	"github.com/Veridise/gnark/constraint"
+	csolver "github.com/Veridise/gnark/constraint/solver"
+	"github.com/Veridise/gnark/logger"
 
 	"github.com/consensys/gnark-crypto/ecc"
 
-	fr "github.com/consensys/gnark/internal/tinyfield"
+	fr "github.com/Veridise/gnark/internal/tinyfield"
 )
 
 type R1CS = system

@@ -2,10 +2,11 @@ package cmp
 
 import (
 	"fmt"
-	"github.com/consensys/gnark/constraint/solver"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/std/math/bits"
 	"math/big"
+
+	"github.com/Veridise/gnark/constraint/solver"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/std/math/bits"
 )
 
 func init() {

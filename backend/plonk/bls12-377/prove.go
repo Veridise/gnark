@@ -41,15 +41,15 @@ import (
 
 	"github.com/consensys/gnark-crypto/ecc/bls12-377/kzg"
 	fiatshamir "github.com/consensys/gnark-crypto/fiat-shamir"
-	"github.com/consensys/gnark/backend"
-	"github.com/consensys/gnark/backend/witness"
+	"github.com/Veridise/gnark/backend"
+	"github.com/Veridise/gnark/backend/witness"
 
-	"github.com/consensys/gnark/constraint"
-	cs "github.com/consensys/gnark/constraint/bls12-377"
-	"github.com/consensys/gnark/constraint/solver"
-	fcs "github.com/consensys/gnark/frontend/cs"
-	"github.com/consensys/gnark/internal/utils"
-	"github.com/consensys/gnark/logger"
+	"github.com/Veridise/gnark/constraint"
+	cs "github.com/Veridise/gnark/constraint/bls12-377"
+	"github.com/Veridise/gnark/constraint/solver"
+	fcs "github.com/Veridise/gnark/frontend/cs"
+	"github.com/Veridise/gnark/internal/utils"
+	"github.com/Veridise/gnark/logger"
 )
 
 const (

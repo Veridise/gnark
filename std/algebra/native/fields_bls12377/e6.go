@@ -19,7 +19,7 @@ package fields_bls12377
 import (
 	bls12377 "github.com/consensys/gnark-crypto/ecc/bls12-377"
 
-	"github.com/consensys/gnark/frontend"
+	"github.com/Veridise/gnark/frontend"
 )
 
 // E6 element in a quadratic extension

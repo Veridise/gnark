@@ -3,11 +3,11 @@ package selector_test
 import (
 	"fmt"
 
+	"github.com/Veridise/gnark/backend/groth16"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/frontend/cs/r1cs"
+	"github.com/Veridise/gnark/std/selector"
 	"github.com/consensys/gnark-crypto/ecc"
-	"github.com/consensys/gnark/backend/groth16"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/frontend/cs/r1cs"
-	"github.com/consensys/gnark/std/selector"
 )
 
 // MuxCircuit is a minimal circuit using a selector mux.

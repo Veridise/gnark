@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"math/big"
 
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/std/algebra/emulated/fields_bn254"
+	"github.com/Veridise/gnark/std/algebra/emulated/sw_emulated"
+	"github.com/Veridise/gnark/std/math/emulated"
 	"github.com/consensys/gnark-crypto/ecc/bn254"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/std/algebra/emulated/fields_bn254"
-	"github.com/consensys/gnark/std/algebra/emulated/sw_emulated"
-	"github.com/consensys/gnark/std/math/emulated"
 )
 
 type Pairing struct {

@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"math/big"
 
+	"github.com/Veridise/gnark/constraint/solver"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/std/math/emulated"
 	"github.com/consensys/gnark-crypto/ecc/secp256k1/ecdsa"
-	"github.com/consensys/gnark/constraint/solver"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/std/math/emulated"
 )
 
 func init() {

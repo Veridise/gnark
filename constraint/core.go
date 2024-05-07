@@ -6,15 +6,15 @@ import (
 	"strconv"
 	"sync"
 
+	"github.com/Veridise/gnark/constraint/solver"
+	"github.com/Veridise/gnark/debug"
+	"github.com/Veridise/gnark/internal/tinyfield"
+	"github.com/Veridise/gnark/internal/utils"
+	"github.com/Veridise/gnark/logger"
+	"github.com/Veridise/gnark/profile"
 	"github.com/blang/semver/v4"
 	"github.com/consensys/gnark"
 	"github.com/consensys/gnark-crypto/ecc"
-	"github.com/consensys/gnark/constraint/solver"
-	"github.com/consensys/gnark/debug"
-	"github.com/consensys/gnark/internal/tinyfield"
-	"github.com/consensys/gnark/internal/utils"
-	"github.com/consensys/gnark/logger"
-	"github.com/consensys/gnark/profile"
 )
 
 type SystemType uint16

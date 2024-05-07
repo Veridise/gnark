@@ -5,12 +5,12 @@ import (
 	"math/big"
 	"math/bits"
 
-	"github.com/consensys/gnark/constraint"
-	"github.com/consensys/gnark/constraint/solver"
-	"github.com/consensys/gnark/frontend"
-	fiatshamir "github.com/consensys/gnark/std/fiat-shamir"
-	"github.com/consensys/gnark/std/hash"
-	"github.com/consensys/gnark/std/utils/algo_utils"
+	"github.com/Veridise/gnark/constraint"
+	"github.com/Veridise/gnark/constraint/solver"
+	"github.com/Veridise/gnark/frontend"
+	fiatshamir "github.com/Veridise/gnark/std/fiat-shamir"
+	"github.com/Veridise/gnark/std/hash"
+	"github.com/Veridise/gnark/std/utils/algo_utils"
 )
 
 type circuitDataForSnark struct {

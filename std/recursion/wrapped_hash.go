@@ -6,13 +6,13 @@ import (
 	"hash"
 	"math/big"
 
+	"github.com/Veridise/gnark/frontend"
+	fiatshamir "github.com/Veridise/gnark/std/fiat-shamir"
+	stdhash "github.com/Veridise/gnark/std/hash"
+	"github.com/Veridise/gnark/std/hash/mimc"
+	"github.com/Veridise/gnark/std/math/bits"
 	"github.com/consensys/gnark-crypto/ecc"
 	cryptomimc "github.com/consensys/gnark-crypto/hash"
-	"github.com/consensys/gnark/frontend"
-	fiatshamir "github.com/consensys/gnark/std/fiat-shamir"
-	stdhash "github.com/consensys/gnark/std/hash"
-	"github.com/consensys/gnark/std/hash/mimc"
-	"github.com/consensys/gnark/std/math/bits"
 	"golang.org/x/exp/slices"
 )
 

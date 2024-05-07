@@ -31,9 +31,9 @@ import (
 	tbw6761 "github.com/consensys/gnark-crypto/ecc/bw6-761/twistededwards"
 	"github.com/consensys/gnark-crypto/ecc/twistededwards"
 
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/internal/utils"
-	"github.com/consensys/gnark/test"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/internal/utils"
+	"github.com/Veridise/gnark/test"
 )
 
 var curves = []twistededwards.ID{twistededwards.BN254, twistededwards.BLS12_377, twistededwards.BLS12_381, twistededwards.BLS12_381_BANDERSNATCH, twistededwards.BW6_761, twistededwards.BW6_633, twistededwards.BLS24_315, twistededwards.BLS24_317}

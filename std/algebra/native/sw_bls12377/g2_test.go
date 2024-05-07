@@ -20,12 +20,12 @@ import (
 	"math/big"
 	"testing"
 
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/std/algebra/algopts"
+	"github.com/Veridise/gnark/std/algebra/native/fields_bls12377"
+	"github.com/Veridise/gnark/test"
 	"github.com/consensys/gnark-crypto/ecc"
 	"github.com/consensys/gnark-crypto/ecc/bls12-377/fr"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/std/algebra/algopts"
-	"github.com/consensys/gnark/std/algebra/native/fields_bls12377"
-	"github.com/consensys/gnark/test"
 
 	bls12377 "github.com/consensys/gnark-crypto/ecc/bls12-377"
 )

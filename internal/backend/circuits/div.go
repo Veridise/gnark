@@ -3,8 +3,8 @@ package circuits
 import (
 	"math/big"
 
+	"github.com/Veridise/gnark/frontend"
 	"github.com/consensys/gnark-crypto/ecc"
-	"github.com/consensys/gnark/frontend"
 )
 
 type divCircuit struct {

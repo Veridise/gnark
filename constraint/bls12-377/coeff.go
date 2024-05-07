@@ -19,8 +19,8 @@ package cs
 import (
 	"encoding/binary"
 	"errors"
-	"github.com/consensys/gnark/constraint"
-	"github.com/consensys/gnark/internal/utils"
+	"github.com/Veridise/gnark/constraint"
+	"github.com/Veridise/gnark/internal/utils"
 	"math/big"
 
 	"github.com/consensys/gnark-crypto/ecc/bls12-377/fr"

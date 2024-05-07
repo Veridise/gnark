@@ -5,8 +5,8 @@ import (
 	"math/big"
 	"math/bits"
 
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/std/math/emulated"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/std/math/emulated"
 )
 
 var minFoldScaledLogSize = 16

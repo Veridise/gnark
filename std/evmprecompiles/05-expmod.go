@@ -3,9 +3,9 @@ package evmprecompiles
 import (
 	"fmt"
 
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/std/math/emulated"
-	"github.com/consensys/gnark/std/math/emulated/emparams"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/std/math/emulated"
+	"github.com/Veridise/gnark/std/math/emulated/emparams"
 )
 
 // Expmod implements [MODEXP] precompile contract at address 0x05.

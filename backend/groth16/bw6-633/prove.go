@@ -24,19 +24,19 @@ import (
 	"github.com/consensys/gnark-crypto/ecc/bw6-633/fr/fft"
 	"github.com/consensys/gnark-crypto/ecc/bw6-633/fr/hash_to_field"
 	"github.com/consensys/gnark-crypto/ecc/bw6-633/fr/pedersen"
-	"github.com/consensys/gnark/backend"
-	"github.com/consensys/gnark/backend/groth16/internal"
-	"github.com/consensys/gnark/backend/witness"
-	"github.com/consensys/gnark/constraint"
-	cs "github.com/consensys/gnark/constraint/bw6-633"
-	"github.com/consensys/gnark/constraint/solver"
-	"github.com/consensys/gnark/internal/utils"
-	"github.com/consensys/gnark/logger"
+	"github.com/Veridise/gnark/backend"
+	"github.com/Veridise/gnark/backend/groth16/internal"
+	"github.com/Veridise/gnark/backend/witness"
+	"github.com/Veridise/gnark/constraint"
+	cs "github.com/Veridise/gnark/constraint/bw6-633"
+	"github.com/Veridise/gnark/constraint/solver"
+	"github.com/Veridise/gnark/internal/utils"
+	"github.com/Veridise/gnark/logger"
 	"math/big"
 	"runtime"
 	"time"
 
-	fcs "github.com/consensys/gnark/frontend/cs"
+	fcs "github.com/Veridise/gnark/frontend/cs"
 )
 
 // Proof represents a Groth16 proof that was encoded with a ProvingKey and can be verified

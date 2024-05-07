@@ -19,7 +19,7 @@ package frontend
 import (
 	"math/big"
 
-	"github.com/consensys/gnark/constraint/solver"
+	"github.com/Veridise/gnark/constraint/solver"
 )
 
 // API represents the available functions to circuit developers

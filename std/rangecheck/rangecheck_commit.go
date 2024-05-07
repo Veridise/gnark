@@ -5,11 +5,11 @@ import (
 	"math"
 	"math/big"
 
-	"github.com/consensys/gnark/constraint/solver"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/internal/frontendtype"
-	"github.com/consensys/gnark/internal/kvstore"
-	"github.com/consensys/gnark/std/internal/logderivarg"
+	"github.com/Veridise/gnark/constraint/solver"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/internal/frontendtype"
+	"github.com/Veridise/gnark/internal/kvstore"
+	"github.com/Veridise/gnark/std/internal/logderivarg"
 )
 
 type ctxCheckerKey struct{}

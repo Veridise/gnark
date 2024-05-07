@@ -1,12 +1,12 @@
 package groth16_test
 
 import (
+	"github.com/Veridise/gnark/backend/groth16"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/frontend/cs/r1cs"
+	"github.com/Veridise/gnark/std/algebra/native/sw_bls12377"
+	stdgroth16 "github.com/Veridise/gnark/std/recursion/groth16"
 	"github.com/consensys/gnark-crypto/ecc"
-	"github.com/consensys/gnark/backend/groth16"
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/frontend/cs/r1cs"
-	"github.com/consensys/gnark/std/algebra/native/sw_bls12377"
-	stdgroth16 "github.com/consensys/gnark/std/recursion/groth16"
 )
 
 // Example of verifying recursively BLS12-377 Groth16 proof in BW6-761 Groth16

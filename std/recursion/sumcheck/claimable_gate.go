@@ -5,9 +5,9 @@ import (
 	"math/big"
 	"math/bits"
 
-	"github.com/consensys/gnark/frontend"
-	"github.com/consensys/gnark/std/math/emulated"
-	"github.com/consensys/gnark/std/math/polynomial"
+	"github.com/Veridise/gnark/frontend"
+	"github.com/Veridise/gnark/std/math/emulated"
+	"github.com/Veridise/gnark/std/math/polynomial"
 )
 
 // gate defines a multivariate polynomial which can be sumchecked.

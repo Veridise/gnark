@@ -19,11 +19,11 @@ package cs
 import (
 	"encoding/binary"
 	"errors"
-	"github.com/consensys/gnark/constraint"
-	"github.com/consensys/gnark/internal/utils"
+	"github.com/Veridise/gnark/constraint"
+	"github.com/Veridise/gnark/internal/utils"
 	"math/big"
 
-	fr "github.com/consensys/gnark/internal/tinyfield"
+	fr "github.com/Veridise/gnark/internal/tinyfield"
 )
 
 // CoeffTable ensure we store unique coefficients in the constraint system

@@ -29,9 +29,9 @@ import (
 	"github.com/consensys/gnark-crypto/ecc/bn254/fr/hash_to_field"
 	"github.com/consensys/gnark-crypto/ecc/bn254/fr/pedersen"
 	"github.com/consensys/gnark-crypto/utils"
-	"github.com/consensys/gnark/backend"
-	"github.com/consensys/gnark/constraint"
-	"github.com/consensys/gnark/logger"
+	"github.com/Veridise/gnark/backend"
+	"github.com/Veridise/gnark/constraint"
+	"github.com/Veridise/gnark/logger"
 )
 
 var (
