@@ -47,7 +47,7 @@ func (builder *builder) AssertIsEqual(i1, i2 frontend.Variable) {
 		debug := builder.newDebugInfo("assertIsEqual", r, " == ", o)
 		builder.cs.AttachDebugInfo(debug, []int{cID})
 	}
-	fmt.Printf("VERIDISE:CONSTRAINT:%d\n", cID)
+	fmt.Printf("VERIDISE:EMIT:CONSTRAINT:%d\n", cID)
 }
 
 // AssertIsDifferent constrain i1 and i2 to be different
