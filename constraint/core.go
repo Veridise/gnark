@@ -361,7 +361,11 @@ func (cs *System) AddR1C(c R1C, bID BlueprintID) int {
 	// release the []uint32 to the pool
 	putBuffer(calldata)
 
-	return cs.NbConstraints - 1
+	cID := cs.NbConstraints - 1
+
+	fmt.Printf("VERIDISE:EMIT:CONSTRAINT:%d\n", cID)
+
+	return cID
 }
 
 func (cs *System) AddSparseR1C(c SparseR1C, bID BlueprintID) int {
@@ -380,7 +384,11 @@ func (cs *System) AddSparseR1C(c SparseR1C, bID BlueprintID) int {
 	// release the []uint32 to the pool
 	putBuffer(calldata)
 
-	return cs.NbConstraints - 1
+	cID := cs.NbConstraints - 1
+
+	fmt.Printf("VERIDISE:EMIT:CONSTRAINT:%d\n", cID)
+
+	return cID
 }
 
 func (cs *System) AddInstruction(bID BlueprintID, calldata []uint32) []uint32 {
