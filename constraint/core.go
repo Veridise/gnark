@@ -3,7 +3,9 @@ package constraint
 import (
 	"fmt"
 	"math/big"
+	"runtime"
 	"strconv"
+	"strings"
 	"sync"
 
 	"github.com/Veridise/gnark/constraint/solver"
@@ -224,6 +226,27 @@ func (system *System) FieldBitLen() int {
 	return system.bitLen
 }
 
+// VERIDISE:
+// We return multiple
+func getCircuitLocation(skip int) string {
+	var funcNames []string
+	for {
+		pc, file, line, ok := runtime.Caller(skip)
+		skip++
+
+		if !ok {
+			break
+		}
+
+		fn := runtime.FuncForPC(pc)
+
+		entry := fmt.Sprintf("%s,%s,%d", fn.Name(), file, line)
+
+		funcNames = append(funcNames, entry)
+	}
+	return strings.Join(funcNames, ";")
+}
+
 func (system *System) AddInternalVariable() (idx int) {
 	idx = system.NbInternalVariables + system.GetNbPublicVariables() + system.GetNbSecretVariables()
 	system.NbInternalVariables++
@@ -232,21 +255,21 @@ func (system *System) AddInternalVariable() (idx int) {
 	if debug.Debug && len(system.lbWireLevel) != system.NbInternalVariables {
 		panic("internal error")
 	}
-	fmt.Printf("VERIDISE:INTERNAL_VARIABLE:%d\n", idx)
+	fmt.Printf("VERIDISE:%s:INTERNAL_VARIABLE:%d\n", getCircuitLocation(2), idx)
 	return idx
 }
 
 func (system *System) AddPublicVariable(name string) (idx int) {
 	idx = system.GetNbPublicVariables()
 	system.Public = append(system.Public, name)
-	fmt.Printf("VERIDISE:PUBLIC_VARIABLE:%s:%d\n", name, idx)
+	fmt.Printf("VERIDISE:%s:PUBLIC_VARIABLE:%s:%d\n", getCircuitLocation(2), name, idx)
 	return idx
 }
 
 func (system *System) AddSecretVariable(name string) (idx int) {
 	idx = system.GetNbSecretVariables() + system.GetNbPublicVariables()
 	system.Secret = append(system.Secret, name)
-	fmt.Printf("VERIDISE:SECRET_VARIABLE:%s:%d\n", name, idx)
+	fmt.Printf("VERIDISE:%s:SECRET_VARIABLE:%s:%d\n", getCircuitLocation(2), name, idx)
 	return idx
 }
 
@@ -363,7 +386,7 @@ func (cs *System) AddR1C(c R1C, bID BlueprintID) int {
 
 	cID := cs.NbConstraints - 1
 
-	fmt.Printf("VERIDISE:EMIT:CONSTRAINT:%d\n", cID)
+	fmt.Printf("VERIDISE:%s:EMIT:CONSTRAINT:%d\n", getCircuitLocation(2), cID)
 
 	return cID
 }
@@ -386,7 +409,7 @@ func (cs *System) AddSparseR1C(c SparseR1C, bID BlueprintID) int {
 
 	cID := cs.NbConstraints - 1
 
-	fmt.Printf("VERIDISE:EMIT:CONSTRAINT:%d\n", cID)
+	fmt.Printf("VERIDISE:%s:EMIT:CONSTRAINT:%d\n", getCircuitLocation(2), cID)
 
 	return cID
 }
