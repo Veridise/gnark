@@ -227,7 +227,8 @@ func (system *System) FieldBitLen() int {
 }
 
 // VERIDISE:
-// We return multiple
+// We return multiple locations because we can't be sure of how far down the
+// call stack this call will occur.
 func getCircuitLocation(skip int) string {
 	var funcNames []string
 	for {
@@ -255,21 +256,21 @@ func (system *System) AddInternalVariable() (idx int) {
 	if debug.Debug && len(system.lbWireLevel) != system.NbInternalVariables {
 		panic("internal error")
 	}
-	fmt.Printf("VERIDISE:%s:INTERNAL_VARIABLE:%d\n", getCircuitLocation(2), idx)
+	fmt.Printf("VERIDISE:INTERNAL_VARIABLE:%s:%d\n", getCircuitLocation(2), idx)
 	return idx
 }
 
 func (system *System) AddPublicVariable(name string) (idx int) {
 	idx = system.GetNbPublicVariables()
 	system.Public = append(system.Public, name)
-	fmt.Printf("VERIDISE:%s:PUBLIC_VARIABLE:%s:%d\n", getCircuitLocation(2), name, idx)
+	fmt.Printf("VERIDISE:PUBLIC_VARIABLE:%s:%s:%d\n", getCircuitLocation(2), name, idx)
 	return idx
 }
 
 func (system *System) AddSecretVariable(name string) (idx int) {
 	idx = system.GetNbSecretVariables() + system.GetNbPublicVariables()
 	system.Secret = append(system.Secret, name)
-	fmt.Printf("VERIDISE:%s:SECRET_VARIABLE:%s:%d\n", getCircuitLocation(2), name, idx)
+	fmt.Printf("VERIDISE:SECRET_VARIABLE:%s:%s:%d\n", getCircuitLocation(2), name, idx)
 	return idx
 }
 
@@ -386,7 +387,7 @@ func (cs *System) AddR1C(c R1C, bID BlueprintID) int {
 
 	cID := cs.NbConstraints - 1
 
-	fmt.Printf("VERIDISE:%s:EMIT:CONSTRAINT:%d\n", getCircuitLocation(2), cID)
+	fmt.Printf("VERIDISE:EMIT:%s:CONSTRAINT:%d\n", getCircuitLocation(2), cID)
 
 	return cID
 }
@@ -409,7 +410,7 @@ func (cs *System) AddSparseR1C(c SparseR1C, bID BlueprintID) int {
 
 	cID := cs.NbConstraints - 1
 
-	fmt.Printf("VERIDISE:%s:EMIT:CONSTRAINT:%d\n", getCircuitLocation(2), cID)
+	fmt.Printf("VERIDISE:EMIT:CONSTRAINT:%s:%d\n", getCircuitLocation(2), cID)
 
 	return cID
 }
