@@ -410,7 +410,7 @@ func (cs *System) AddSparseR1C(c SparseR1C, bID BlueprintID) int {
 
 	cID := cs.NbConstraints - 1
 
-	fmt.Printf("VERIDISE:EMIT:CONSTRAINT:%s:%d\n", getCircuitLocation(2), cID)
+	fmt.Printf("VERIDISE:EMIT:%s:CONSTRAINT:%d\n", getCircuitLocation(2), cID)
 
 	return cID
 }
